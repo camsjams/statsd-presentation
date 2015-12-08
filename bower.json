@@ -1,11 +1,10 @@
 {
-  "name": "es6-presentation",
+  "name": "statsd-presentation",
   "version": "0.0.1",
-  "description": "Quick overview of some of the fetures of ES6",
+  "description": "StatsD: To Measure is to Know",
   "main": "index.html",
   "authors": [
     "Cameron Manavian",
-    "Justin Vencel"
   ],
   "license": "MIT",
   "ignore": [
