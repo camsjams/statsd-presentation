@@ -84,18 +84,25 @@
             <h2>Enter StatsD</h2>
 
             <ul>
-                <li class="fragment">StatsD is a daemon built in Node.Js</li>
-                <li class="fragment">Ported by Etsy, originally from Flickr on Perl</li>
+                <li class="fragment">StatsD is a daemon, ideally running on each application server</li>
+                <li class="fragment">Ported by Etsy to Node.Js, inspired from Flickr's Perl StatsD</li>
                 <li class="fragment">It listens for statistics sent over UDP/TCP</li>
                 <li class="fragment">The "fire and forget" feature of UDP means reduced risk of introducing latency to
                     your app
                 </li>
-                <li class="fragment">Sends aggregates to one or more pluggable backend services like Graphite, Grafana,
-                    etc.
-                </li>
+                <li class="fragment">Sends aggregates to one or more pluggable backend services like Graphite</li>
             </ul>
 
             <a href="https://github.com/etsy/statsd">github.com/etsy/statsd</a>
+        </section>
+        <section>
+            <h2>Available backends besides Graphite</h2>
+            <ul>
+                <li>MySQL</li>
+                <li>CouchDB</li>
+                <li>Mongo</li>
+                <li>Socket.io</li>
+            </ul>
         </section>
         <section>
             <h2>UDP</h2>
