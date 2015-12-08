@@ -8,4 +8,6 @@ Link coming soon
 
 ## Run
 Load ./index.html via server or directly from file into browser
- 
+
+
+![Image of Lord Kelvin wearing sunglasses](img/Lord_Kelvin_photograph_cool.jpg)
