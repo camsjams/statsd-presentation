@@ -97,6 +97,42 @@
 
             <a href="https://github.com/etsy/statsd">github.com/etsy/statsd</a>
         </section>
+        <section>
+            <h2>UDP</h2>
+
+            <p>
+                The User Data Protocol is a connectionless transmission, meaning no handshakes ... but also no guarantee of delivery, de-duplication, or time ordering.
+            </p>
+            <small>For stats, this <em>fire and forget</em> model works fine!</small>
+        </section>
+        <section>
+            <h2>Setting up new data</h2>
+
+            <p>
+                There is no overhead for adding a new counter or timer
+            </p>
+            <pre><code>
+        client.timing('time_to_send_emails', 4000);
+            </code></pre>
+
+             <pre><code>
+        client.increment('number_of_new_offers');
+             </code></pre>
+        </section>
+        <section>
+            <h2>See data relative to deploys</h2>
+            <pre><code>
+        client.increment('login_success');
+
+        // elsewhere
+        client.increment('login_failure');
+            </code></pre>
+            <img class="fragment" src="https://codeascraft.com/wp-content/uploads/2011/02/logins2.png" />
+        </section>
+        <section>
+            <h2>Diving deeper into data</h2>
+            <img class="fragment" src="https://codeascraft.com/wp-content/uploads/2011/02/login_fails2.png" />
+        </section>
         <section style="text-align: left;">
             <h1>THE END</h1>
 
