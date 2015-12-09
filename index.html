@@ -60,13 +60,13 @@
             </p>
             <img width="300px"
                  src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Lord_Kelvin_photograph.jpg"/><br/>
-            <small>(of −273 degree Celsius fame)</small>
+            <small>William Thomson (of −273&deg;C fame)</small>
         </section>
         <section>
             <h2>Stats, what are they good for?</h2>
 
             <small class="fragment">
-                Stats are usually related to measuring the three levels of system: network, machine, and the
+                Monitoring is usually related to measuring the three levels of a system: network, machine, and the
                 application.
             </small>
 
@@ -113,11 +113,21 @@
             </p>
             <small>For stats, this <em>fire and forget</em> model works fine!</small>
         </section>
+		<section>
+            <h2>What could be measured?</h2>
+            <ul>
+                <li class="fragment">Memory usage</li>
+                <li class="fragment">Error rate on a particular service</li>
+                <li class="fragment">Changes in successes and failures in relation to deploys</li>
+                <li class="fragment">Time code takes to complete</li>
+                <li class="fragment">Unique users online</li>
+            </ul>
+        </section>
         <section>
             <h2>Setting up new data</h2>
 
             <p>
-                There is no overhead for adding a new counter or timer
+                There is no overhead for adding a new metric
             </p>
             <pre><code>
         client.timing('time_to_send_emails', 4000);
@@ -132,15 +142,6 @@
 			 <pre><code>
         client.set('users', currentUserId);
              </code></pre>
-        </section>
-        <section>
-            <h2>What could be measured?</h2>
-            <ul>
-                <li class="fragment">Memory usage</li>
-                <li class="fragment">Error rate on a particular service</li>
-                <li class="fragment">Changes in successes and failures in relation to deploys</li>
-                <li class="fragment">Time code takes to complete</li>
-            </ul>
         </section>
         <section>
             <h2>See data relative to deploys</h2>
