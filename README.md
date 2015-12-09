@@ -1,7 +1,7 @@
 # StatsD: To Measure is to Know
 The more data we have, the more we know what is happening at any given moment.
 
-Link coming soon
+[View presentation here](http://etalx.com/statds-presentation)
 
 ## Install
 >       $ bower install
